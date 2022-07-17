@@ -5,6 +5,7 @@
 #' @param n Output length
 #' @param version UUID version
 #' @return A character vector
+#' @export
 uuid <- function(n = 1, version = c("1", "3", "4", "5")) {
   version <- match.arg(version)
   uuid_(n, as.integer(version))
